@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe App</title>
+
+    <link rel="icon" href="https://pngimg.com/uploads/spaghetti/spaghetti_PNG91.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <h3 class="logo">🍴 Recipe<span>Book</span></h3>
+            <p>Discover • Cook • Enjoy</p>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">YOUR DAILY FOOD INSPIRATION</p>
+            <h1>Discover Delicious <span>Recipes</span></h1>
+            <p class="hero-text">
+                Explore amazing dishes from around the world
+                and find something delicious to cook today.
+            </p>
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input type="text" id="search"
+                    placeholder="Search your favourite recipe...">
+                <span class="search-hint">ENTER ↵</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="category-section">
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE THE WORLD</p>
+                <h2>Browse By Cuisine</h2>
+                <p>Choose your favourite cuisine to explore recipes.</p>
+            </div>
+
+            <div class="categories">
+                <button id="indian" class="category-btn">🇮🇳 Indian</button>
+                <button id="canadian" class="category-btn">🇨🇦 Canadian</button>
+                <button id="american" class="category-btn">🇺🇸 American</button>
+                <button id="thai" class="category-btn">🇹🇭 Thai</button>
+                <button id="british" class="category-btn">🇬🇧 British</button>
+                <button id="russian" class="category-btn">🇷🇺 Russian</button>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="section-heading">
+                <p class="eyebrow">MADE WITH LOVE</p>
+                <h2>Explore Recipes</h2>
+                <p>Find your next favourite meal.</p>
+            </div>
+
+            <div class="food"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for food lovers | RecipeBook</p>
+    </footer>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>

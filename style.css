@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f5ef;
+    color: #35251e;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.90)
+        ),
+        url("./food2.jfif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 25px 7% 75px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    color: #fff7ed;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    color: #fff7ed;
+    font-size: 25px;
+}
+
+.logo span {
+    color: #e5aa75;
+}
+
+.navbar p {
+    color: #e3c6ad;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 85px auto 15px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #e5aa75;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #fff7ed;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 65px);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #e5aa75;
+}
+
+.hero-text {
+    color:#e5d0bd;
+    margin: 20px auto 30px;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+/* SEARCH BAR */
+
+.search-box {
+    max-width: 520px;
+    margin: auto;
+    background: #fffdf9;
+    display: flex;
+    align-items: center;
+    padding: 8px 18px;
+    border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(75, 46, 29, 0.09);
+    gap: 12px;
+}
+
+.search-box > span:first-child {
+    font-size: 27px;
+    color: #bd7048;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px 0;
+    color: #35251e;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #aa9a8e;
+}
+
+.search-hint {
+    font-size: 10px;
+    color: #a18b7d;
+    white-space: nowrap;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    padding: 65px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-heading > p:last-child {
+    color: #8c786b;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* CATEGORY BUTTONS */
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 70px;
+}
+
+.category-btn {
+    border: 1px solid #e1cbb9;
+    background: #fffdf9;
+    color: #654635;
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: #bd7048;
+    color: white;
+    border-color: #bd7048;
+    transform: translateY(-4px);
+    box-shadow: 0 7px 15px rgba(189, 112, 72, 0.2);
+}
+
+/* RECIPE CARDS */
+
+.food {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.food > div {
+    background: #fffdf9;
+    border-radius: 18px;
+    padding: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(66, 43, 29, 0.07);
+    transition: all 0.35s ease;
+    border: 1px solid #eee5db;
+}
+
+.food > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(66, 43, 29, 0.13);
+}
+
+.img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 13px;
+    border: none;
+    transition: transform 0.4s ease;
+}
+
+.food > div:hover .img {
+    transform: scale(1.04);
+}
+
+.food > div > div {
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+.food h5 {
+    color: #493126;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        #38251e,
+        #593a2c
+    );
+    color: #f3dfcc;
+    font-size: 13px;
+    border-top: 3px solid #bd7048;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.recipes-section {
+    scroll-margin-top: 25px;
+}
+
+
+/* RECIPE CARD HOVER EFFECT */
+
+.food > div {
+    transition: all 0.35s ease;
+    background: #fffdf9;
+}
+
+.food > div:hover {
+    background: #493126;
+    border-color: #493126;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(66, 43, 29, 0.2);
+}
+
+/* Recipe title */
+
+.food h5 {
+    color: #493126;
+    transition: color 0.35s ease;
+}
+
+.food > div:hover h5 {
+    color: #fff1df;
+}
+
+/* Image hover */
+
+.food .img {
+    transition: transform 0.4s ease;
+}
+
+.food > div:hover .img {
+    transform: scale(1.05);
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 20px 5% 55px;
+    }
+
+    .navbar p {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content {
+        margin-top: 65px;
+    }
+
+    .main-content {
+        padding: 45px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .category-btn {
+        padding: 10px 17px;
+        font-size: 12px;
+    }
+
+    .food {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .img {
+        height: 145px;
+    }
+
+    .food h5 {
+        font-size: 14px;
+    }
+
+    .search-hint {
+        display: none;
+    }
+}
